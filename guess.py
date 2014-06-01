@@ -25,7 +25,7 @@ def main():
         for line in fp:
             word = line.strip().lower()
             key = word_to_sorted_anagram(word)
-            words_by_anagram[word_to_sorted_anagram(word)] = word
+            words_by_anagram[key] = word
 
     possible_answers = []
     for combo in itertools.combinations(args.letters, args.n_letters):
