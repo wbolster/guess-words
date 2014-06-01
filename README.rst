@@ -34,28 +34,31 @@ The example below generates 5 letter words for the given letters::
       1. barry
       2. brash
       3. brays
-      4. burch
-      5. burrs
-      6. bursa
-      7. busch
-      8. bushy
-      9. carry
-     10. chary
-     11. crabs
-     12. crash
-     13. crush
-     14. curry
-     15. cushy
-     16. cyrus
-     17. harry
-     18. hurry
-     19. saucy
-     20. scary
-     21. scrub
-     22. scuba
-     23. shrub
-     24. surya
-     25. yucca
+      4. brush
+      5. burch
+      6. burrs
+      7. bursa
+      8. busch
+      9. bushy
+     10. carry
+     11. chars
+     12. chary
+     13. crabs
+     14. crash
+     15. crush
+     16. curbs
+     17. curry
+     18. cushy
+     19. cyrus
+     20. harry
+     21. hurry
+     22. saucy
+     23. scary
+     24. scrub
+     25. scuba
+     26. shrub
+     27. surya
+     28. yucca
 
 
 License

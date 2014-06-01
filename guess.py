@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import argparse
+import collections
 import itertools
+
 
 DEFAULT_DICT_FILE = '/usr/share/dict/words'
 
@@ -20,19 +22,19 @@ def main():
     parser.add_argument('letters', help="all possible letters")
     args = parser.parse_args()
 
-    words_by_anagram = dict()
+    words_by_anagram = collections.defaultdict(list)
     with open(args.dict) as fp:
         for line in fp:
             word = line.strip().lower()
             key = word_to_sorted_anagram(word)
-            words_by_anagram[key] = word
+            words_by_anagram[key].append(word)
 
     possible_answers = []
     for combo in itertools.combinations(args.letters, args.n_letters):
         key = word_to_sorted_anagram(combo)
         value = words_by_anagram.get(key)
         if value is not None:
-            possible_answers.append(value)
+            possible_answers.extend(value)
 
     possible_answers = sorted(set(possible_answers))
     if not possible_answers:
