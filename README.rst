@@ -2,7 +2,7 @@ Word guesser
 ============
 
 This is a simple program that generates known words for a set of letters. It
-uses a brute force approach to tests all possible combinations for the given
+uses a brute force approach to test all possible combinations for the given
 letters against the words in a known word list.
 
 This program can be used for games such as Scrabble or Draw Something.
