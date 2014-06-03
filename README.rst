@@ -12,7 +12,7 @@ Usage
 
 Download the program and run it with ``--help`` to see instructions::
 
-    $ ./guess.py --help
+    $ python -m guess_words.cli --help
     usage: guess.py [-h] [--dict DICT] n_letters letters
 
     positional arguments:
@@ -29,7 +29,7 @@ Example
 
 The example below generates 5 letter words for the given letters::
 
-    $ ./guess.py 5 uhrcsyabcr
+    $ python -m guess_words.cli 5 uhrcsyabcr
     Possible answers:
       1. barry
       2. brash
