@@ -22,7 +22,7 @@
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Available letters:</label>
-        <input type="text" class="form-control" name="letters" placeholder="e.g. yasxagsue" value="{{ letters }}">
+        <input type="text" class="form-control" name="letters" placeholder="e.g. yasxagsue" value="{{ letters|default("", boolean=true) }}">
       </div>
       <button type="submit" class="btn btn-primary">Guess!</button>
     </form>

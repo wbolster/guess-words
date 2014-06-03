@@ -20,18 +20,16 @@ def index():
 
     error = answers = None  # for easy render()
 
-    letters = request.args.get('letters')
-    try:
-        n_letters = int(request.args.get('n-letters', '1'))
-    except ValueError:
-        n_letters = 0
-        error = "Invalid input"
+    n_letters = request.args.get('n-letters')
+    if n_letters is not None:
+        try:
+            n_letters = int(n_letters)
+        except ValueError:
+            error = "Invalid input"
 
+    letters = request.args.get('letters')
     if n_letters and letters:
         answers = searcher.lookup(letters, n_letters)
-        print answers
-    else:
-        error = "Invalid input"
 
     return render_template(
         'template.html',
