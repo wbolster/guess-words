@@ -1,6 +1,6 @@
 import argparse
 
-from . import search
+from guess_words import search
 
 DEFAULT_DICT_FILE = '/usr/share/dict/words'
 
