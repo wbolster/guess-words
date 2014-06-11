@@ -24,6 +24,7 @@ class Searcher(object):
         # each combo to see whether it points to a known word (or multiple
         # known words).
         answers = set()
+        letters = letters.lower()
         for combo in itertools.combinations(letters, n_letters):
             key = word_to_sorted_anagram(combo)
             value = self.table.get(key)
