@@ -31,4 +31,4 @@ class Searcher(object):
             if value is not None:
                 answers.update(value)
 
-        return answers
+        return sorted(answers)
